@@ -27,11 +27,10 @@ import MKButton from "components/MKButton";
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 
-// About Us page sections
+//Domains page sections
 import Information from "pages/LandingPages/DomainPage/sections/Information";
 import Team from "pages/LandingPages/DomainPage/sections/Team";
-import Featuring from "pages/LandingPages/AboutUs/sections/Featuring";
-import Newsletter from "pages/LandingPages/AboutUs/sections/Newsletter";
+import Projects from "pages/LandingPages/DomainPage/sections/Projects"
 
 // Routes
 import routes from "routes";
@@ -43,6 +42,7 @@ import {
     useParams
   } from "react-router-dom";
 import footerRoutes from "footer.routes";
+import team1 from "assets/images/team-5.jpg";
 
 // Images
 
@@ -53,7 +53,24 @@ const dict = {
     logo:"https://www.tailorbrands.com/wp-content/uploads/2020/07/mcdonalds-logo.jpg",
     bgImage:"https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/content/cover_image_file/cover_image/1084235/retina_1708x683_cover-REDESIGN-Developing-Mobile-Web-Applications--When-Why-and-How-Luke_Newsletter-514abca502cd4974c55460270a9561ae-345ee9582aae38573ed550295250c72c.png",
     about:"Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).[1] Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly refers, may include Web engineering, Web design, Web content development, client liaison, client-side/server-side scripting, Web server and network security configuration, and e-commerce development.Among Web professionals, Web developmentusually refers to the main non-design aspects of building Web sites: writing markup and coding.[2] Web development may use content management systems (CMS) to make content changes easier and available with basic technical skills.",
-    team:{} 
+    team:[{name:"Likith X",github:"https://www.github.com",dp:team1},
+          {name:"Shanthanu",github:"https://www.github.com",dp:team1},
+          {name:"Sharan X",github:"https://www.github.com",dp:team1}
+        ],
+    ongoing:[
+      {title:"Electric car",link:"https://www.gat.ac.in",description:"enter description here"},
+      {title:"Electric car",link:"https://www.gat.ac.in",description:"enter description here"},
+      {title:"Electric car",link:"https://www.gat.ac.in",description:"enter description here"},
+      {title:"Electric car",link:"https://www.gat.ac.in",description:"enter description here"},
+      {title:"Electric car",link:"https://www.gat.ac.in",description:"enter description here"}
+    ],
+    completed:[
+      {title:"completed Electric car",link:"https://www.gat.ac.in",description:"enter description here"},
+      {title:"completed Electric car",link:"https://www.gat.ac.in",description:"enter description here"},
+      {title:"completed Electric car",link:"https://www.gat.ac.in",description:"enter description here"},
+      {title:"completed Electric car",link:"https://www.gat.ac.in",description:"enter description here"},
+      {title:"completed Electric car",link:"https://www.gat.ac.in",description:"enter description here"}
+    ] 
 },
 2:{title:"Artificial intelligence"},
 3:{title:"Embedded Systems"},
@@ -122,7 +139,8 @@ const item = dict[id];
         }}
       >
         <Information  item = {item}/>
-        <Team />
+        <Projects ongoing = {item.ongoing} completed = {item.completed}/>
+        <Team coordinators= {item.team}/>
 
       </Card>
       <MKBox pt={6} px={1} mt={6}>

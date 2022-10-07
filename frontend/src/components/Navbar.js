@@ -32,13 +32,13 @@ export default function Navbar({textcolor}){
           </Typography>
           <Divider />
           <List>
-            {navItems.map((item) => (
+            {navItems.map((item) => {
               <ListItem key={item} disablePadding>
                 <ListItemButton sx={{ textAlign: 'center' }}>
                   <ListItemText primary={item} />
                 </ListItemButton>
               </ListItem>
-            ))}
+            })}
           </List>
         </Box>
       );

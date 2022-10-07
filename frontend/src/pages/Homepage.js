@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Banner from '../components/Banner';
 import About from '../components/About';
 import Events from "../data/events.json";
+import Domains from '../components/Domains';
 export default function Homepage(){
 
     return(<React.Fragment>
@@ -12,6 +13,6 @@ export default function Homepage(){
             description={'Learn. Upskill. Complete'}
             />
         <About events={Events}></About>
-
+        <Domains></Domains>
     </React.Fragment>);
 }

@@ -13,6 +13,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 
@@ -28,8 +29,12 @@ export default function Navbar(){
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
           <Typography variant="h6" sx={{ my: 2 }}>
+          <Link to='/' className='nav-text'>
+
             GAT-Overflow
+            </Link>
           </Typography>
+          
           <Divider />
           <List>
             {navItems.map((item) => {
@@ -62,7 +67,9 @@ export default function Navbar(){
         component="div"
         sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
       >
+        <Link className='nav-text' to='/'>
         GAT OVERFLOW
+        </Link>
       </Typography>
       <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
         {navItems.map((item) => (

@@ -8,15 +8,15 @@ import Footer from '../components/Footer';
 export default function Homepage(){
 
     return(<React.Fragment>
-        <Navbar/>
-        {/* <Banner image={'https://images2.alphacoders.com/702/70292.jpg'} */}
-        
+        {/* <Navbar/> */}
         <Banner image={"https://images4.alphacoders.com/104/104644.jpg"}
             title={"GAT Overflow"}
             description={'Learn. Upskill. Complete'}
             />
+        {/* <Banner image={'https://images2.alphacoders.com/702/70292.jpg'} */}
+        
+        
         <About events={Events}></About>
         <Domains></Domains>
-        <Footer/>
     </React.Fragment>);
 }

@@ -1,9 +1,14 @@
 .nav-text{
     text-shadow: 0.1rem 0.1rem 0.2rem black;
     color: white !important;
+    text-decoration: none !important;
 }
 
 /* BANNER SECTION */
+.banner-text{
+    text-shadow: 0.1rem 0.1rem 0.2rem black;
+    color: white !important;
+}
 
 .banner-section{
     background-size: cover;
@@ -41,8 +46,18 @@
     height: 100%;
     
 }
+
+
+
 /* FOOTER SECTION */
 footer a{
     text-decoration: none;
     color: white;
+}
+
+
+/* DOMAIN PAGE */
+.about-image{
+    object-fit: contain;
+    width: 100%;
 }

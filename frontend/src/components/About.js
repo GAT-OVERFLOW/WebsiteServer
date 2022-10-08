@@ -21,7 +21,7 @@ export default function About({events}){
         );
       }
     return(
-    <Box>
+    <section>
         <Grid container py={10} alignItems='center' justifyContent={'center'} spacing={10}>
             <Grid item md={8}>
                 <Container maxWidth='md'>
@@ -52,5 +52,5 @@ export default function About({events}){
                 </Box>
             </Grid>
         </Grid>
-    </Box>)
+    </section>)
 }

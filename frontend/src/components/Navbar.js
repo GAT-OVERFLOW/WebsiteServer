@@ -17,7 +17,7 @@ import { useState } from 'react';
 
 
 
-export default function Navbar({textcolor}){
+export default function Navbar(){
     const navItems = ['domains', 'members', 'projects', 'contact'];
     const [mobileOpen, setMobileOpen] = useState(false);
     const drawerWidth = 240;
@@ -46,7 +46,7 @@ export default function Navbar({textcolor}){
     const container = window !== undefined ? () => window.document.body : undefined;
     return(   
     <Box sx={{ display: 'flex' }}>   
-    <AppBar  style={{ background: 'transparent', boxShadow: 'none', color:textcolor}} component="nav">
+    <AppBar  style={{ background: 'transparent', boxShadow: 'none'}} component="nav">
     <Toolbar >
       <IconButton
         color="inherit"
@@ -66,7 +66,7 @@ export default function Navbar({textcolor}){
       </Typography>
       <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
         {navItems.map((item) => (
-          <Button className='nav-text' key={item} sx={{ color: textcolor }}>
+          <Button className='nav-text' key={item} >
             {item}
           </Button>
         ))}

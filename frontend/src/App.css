@@ -1,5 +1,6 @@
 .nav-text{
     text-shadow: 0.1rem 0.1rem 0.2rem black;
+    color: white !important;
 }
 
 /* BANNER SECTION */
@@ -29,6 +30,7 @@
 }
 
 .cardbox{
+    height: 100%;
     box-shadow: 0 0 0.5rem 0.2rem white,
                 0 0 1rem 0.5rem cyan;
 }
@@ -38,4 +40,9 @@
     color: white;
     height: 100%;
     
+}
+/* FOOTER SECTION */
+footer a{
+    text-decoration: none;
+    color: white;
 }

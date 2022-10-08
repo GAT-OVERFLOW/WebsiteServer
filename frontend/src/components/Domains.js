@@ -18,7 +18,7 @@ export default function Domains(){
                 <Grid container spacing={10} pb={10} mb={10} justifyContent='center'>
                     {domains.map((domain,key)=>{
                         return(
-                        <Grid key={key} item sm={3} style={{width:"100%"}}>
+                        <Grid key={key} item sm={4} style={{width:"100%"}}>
                             <Box className='cardbox'>
                         <Card className="domain-card" >
                         <CardContent>

@@ -2,7 +2,6 @@ import logo from './logo.svg';
 import './App.css';
 import Homepage from './pages/Homepage';
 import Navbar from './components/Navbar';
-import Banner from './components/Banner';
 import Footer from './components/Footer';
 import React from 'react';
 import Domain from './pages/Domain';
@@ -18,8 +17,6 @@ function App() {
       </Route>
       <Route path="/domain/:id" element={<Domain />} />
     </Routes>
-    {/* <Homepage/> */}
-    {/* <Domain/> */}
     <Footer/>
 
 

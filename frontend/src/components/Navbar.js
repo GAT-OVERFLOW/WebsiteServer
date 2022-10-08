@@ -29,7 +29,7 @@ export default function Navbar(){
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
           <Typography variant="h6" sx={{ my: 2 }}>
-          <Link to='/' className='nav-text'>
+          <Link to='/' >
 
             GAT-Overflow
             </Link>

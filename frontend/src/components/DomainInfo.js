@@ -89,7 +89,7 @@ export default function DomainInfo({roadmap,ongoing,completed}){
                     <Typography item my={5} textAlign={'center'} variant='h4'>
                        Roadmap
                     </Typography>
-                    <img style={{borderRadius:'2rem'}} className="about-image" src={roadmap}></img>
+                    <img style={{borderRadius:'2rem',boxShadow: '0 0 1rem 0.1rem red,0 0 1rem 0.2rem pink'}} className="about-image" src={roadmap}></img>
                     </Container>
                 </Grid>
             </Grid>

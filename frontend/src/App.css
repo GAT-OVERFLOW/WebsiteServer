@@ -86,7 +86,22 @@ footer a{
     width: 100%;
 }
 
-.domain-info-section{
+.about-domain-section{
     background-color: rgb(189, 218, 241);
+}
+
+.team-section{
+    background: url("https://i.pinimg.com/originals/60/2e/0c/602e0c3cd7ab07d8dfc10ca287323b1e.jpg") no-repeat fixed;
+    background-size: cover;
+
+    
+}
+
+.team-dp{
+    object-fit: contain;
+    width: 100%;
+    max-height: 20rem;
+    border-radius: 1rem;
+
 }
 

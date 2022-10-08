@@ -3,7 +3,7 @@ import { Box } from "@mui/system";
 
 export default function AboutDomain({about,aboutimage,title}){
     return(
-        <section>
+        <section className="about-domain-section">
             <Grid container p={10} justifyContent='center'>
                 <Grid item sm={4} sx={{ display: { xs: 'none', md: 'block' } }} >
                     <Container >

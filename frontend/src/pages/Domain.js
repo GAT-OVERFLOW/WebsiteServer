@@ -4,10 +4,10 @@ import {useParams} from 'react-router-dom';
 import data from '../data/domains.json';
 import AboutDomain from "../components/AboutDomain";
 import DomainInfo from "../components/DomainInfo";
+import Team from "../components/Team";
 
 export default function Domain(){
     const {id} = useParams();
-    console.log(id)
     const {about,aboutimage,roadmap,bgImage,completed,logo,ongoing,team,title,caption} = data[id];
     console.log(about,bgImage,completed,logo,ongoing,team,title)
     return (<React.Fragment>
@@ -17,5 +17,6 @@ export default function Domain(){
             />
         <AboutDomain aboutimage={aboutimage} about={about} title = {title}/>
         <DomainInfo roadmap={roadmap} completed={completed} ongoing={ongoing}></DomainInfo>
+        <Team members={team}/>
     </React.Fragment>)
 }

@@ -3,11 +3,11 @@ import { Box } from "@mui/system";
 
 export default function Footer(){
     return(
-        <footer>
-            <Box color={{backgroundColor:"#26242e"}} py={10}>
+        <footer id="footer">
+            <Box  py={10}>
                 <Container maxWidth={'xl'} className='nav-text'>
                 <Grid container spacing={10} justifyContent={'space-around'}>
-                    <Grid item sm={4} >
+                    <Grid item sm={3} >
                         <Typography variant='h4'>
                             Content
                         </Typography>
@@ -32,11 +32,11 @@ export default function Footer(){
                             Links
                         </Typography>
                         <Divider />
-                        <Typography component={'a'} className='nax-text'>Home</Typography><br/>
-                        <Typography component={'a'} className='nax-text'>Domains</Typography><br/>
+                        <Typography component={'a'} href="/" className='nax-text'>Home</Typography><br/>
+                        <Typography component={'a'} href="/#domain-section" className='nax-text'>Domains</Typography><br/>
                         <Typography component={'a'} className='nax-text'>Members</Typography><br/>
                         <Typography component={'a'} className='nax-text'>Projects</Typography><br/>
-                        <Typography component={'a'} className='nax-text'>Contact</Typography><br/>
+                        <Typography component={'a'}  onClick={()=>{window.scroll({top:document.body.scrollHeight, behavior: "smooth"})}} className='nax-text'>Contact</Typography><br/>
                     </Grid>
                     <Grid item sm={3}>
                     <Typography variant='h4'>

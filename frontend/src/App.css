@@ -49,7 +49,7 @@ a{
     background: transparent !important;
 }
 
-.domain-section{
+#domain-section{
     background: linear-gradient(0deg,rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("https://thumbs.dreamstime.com/b/internet-technology-programming-seamless-background-linear-icons-set-html-php-code-pattern-line-style-74589214.jpg") repeat fixed;
     object-fit: contain;
 }
@@ -74,9 +74,13 @@ a{
 
 
 /* FOOTER SECTION */
+footer{
+     background-color: #26242e;
+}
 footer a{
     text-decoration: none;
     color: white;
+    
 }
 
 

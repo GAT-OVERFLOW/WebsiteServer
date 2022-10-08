@@ -12,7 +12,7 @@ const domains = [
 export default function Domains(){
     return(
         <Container maxWidth='xl'>
-        <section className="domain-section">
+        <section id="domain-section">
                 <Typography my={10} pt={10} textAlign={'center'} color='white' variant="h2">Domains</Typography>
                 <Container >
                 <Grid container spacing={10} pb={10} mb={10} justifyContent='center'>

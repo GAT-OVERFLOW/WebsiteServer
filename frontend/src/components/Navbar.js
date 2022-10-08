@@ -19,7 +19,6 @@ import { Link } from 'react-router-dom';
 
 
 export default function Navbar(){
-    const navItems = ['domains', 'members', 'projects', 'contact'];
     const [mobileOpen, setMobileOpen] = useState(false);
     const drawerWidth = 240;
     const handleDrawerToggle = () => {
@@ -27,23 +26,48 @@ export default function Navbar(){
     };
 
     const drawer = (
-        <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-          <Typography variant="h6" sx={{ my: 2 }}>
+        <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center'}}>
           <Link to='/' >
-
-            GAT-Overflow
-            </Link>
-          </Typography>
+          <Typography variant="h6" sx={{ my: 2 }} color={'white'}>
           
+            GAT OVERFLOW
+           
+          </Typography>
+          </Link>
           <Divider />
           <List>
-            {navItems.map((item) => {
-              <ListItem key={item} disablePadding>
-                <ListItemButton sx={{ textAlign: 'center' }}>
-                  <ListItemText primary={item} />
+
+          <ListItem disablePadding>
+                <ListItemButton href='/'>
+                  <ListItemText sx={{ textAlign: 'center' }} primary='HOME' />
                 </ListItemButton>
               </ListItem>
-            })}
+            
+              <ListItem disablePadding>
+                <ListItemButton href='/#domain-section'>
+                  <ListItemText sx={{ textAlign: 'center' }} primary='DOMAINS' />
+                </ListItemButton>
+              </ListItem>
+
+              <ListItem disablePadding>
+                <ListItemButton >
+                  <ListItemText sx={{ textAlign: 'center' }} primary='MEMBERS' />
+                </ListItemButton>
+              </ListItem>
+
+              <ListItem disablePadding>
+                <ListItemButton >
+                  <ListItemText sx={{ textAlign: 'center' }} primary='PROJECTS' />
+                </ListItemButton>
+              </ListItem>
+
+              
+              <ListItem disablePadding>
+                <ListItemButton  onClick={()=>{window.scroll({top:document.body.scrollHeight, behavior: "smooth"})}} sx={{ textAlign: 'center' }}>
+                  <ListItemText primary='CONTACT' />
+                </ListItemButton>
+              </ListItem>
+            
           </List>
         </Box>
       );
@@ -60,7 +84,7 @@ export default function Navbar(){
         onClick={handleDrawerToggle}
         sx={{ mr: 2, display: { sm: 'none' } }}
       >
-        <MenuIcon />
+        <MenuIcon color='primary'/>
       </IconButton>
       <Typography className='nav-text'
         variant="h6"
@@ -72,11 +96,23 @@ export default function Navbar(){
         </Link>
       </Typography>
       <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-        {navItems.map((item) => (
-          <Button className='nav-text' key={item} >
-            {item}
+        
+          <Button className='nav-text' href="/#domain-section">
+            Domains
           </Button>
-        ))}
+
+          <Button className='nav-text'  >
+            Members
+          </Button>
+
+          <Button className='nav-text'  >
+            Projects
+          </Button>
+
+          <Button className='nav-text' onClick={()=>{window.scroll({top:document.body.scrollHeight, behavior: "smooth"})}} >
+            Contact
+          </Button>
+      
       </Box>
     </Toolbar>
   </AppBar>
@@ -90,8 +126,9 @@ export default function Navbar(){
             keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
+            
             display: { xs: 'block', sm: 'none' },
-            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth ,backgroundColor: '#26242e',color:'white'},
           }}
         >
           {drawer}

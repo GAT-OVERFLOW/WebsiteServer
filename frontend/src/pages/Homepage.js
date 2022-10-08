@@ -8,8 +8,10 @@ export default function Homepage(){
 
     return(<React.Fragment>
         <Navbar textcolor={'white'}/>
-        <Banner image={'https://miro.medium.com/max/1024/0*CIIy-ftkTpOnglYd.jpg'}
-            title={"GAT-Overflow"}
+        {/* <Banner image={'https://images2.alphacoders.com/702/70292.jpg'} */}
+        
+        <Banner image={"https://images4.alphacoders.com/104/104644.jpg"}
+            title={"GAT Overflow"}
             description={'Learn. Upskill. Complete'}
             />
         <About events={Events}></About>

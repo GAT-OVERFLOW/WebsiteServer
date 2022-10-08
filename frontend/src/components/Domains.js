@@ -11,30 +11,37 @@ const domains = [
         ]
 export default function Domains(){
     return(
-        <section style={{backgroundColor:'#26254d'}}>
-        <Container >
+        <Container maxWidth='xl'>
+        <section className="domain-section">
                 <Typography my={10} pt={10} textAlign={'center'} color='white' variant="h2">Domains</Typography>
-                <Grid container spacing={10} justifyContent='center'>
+                <Container >
+                <Grid container spacing={10} pb={10} mb={10} justifyContent='center'>
                     {domains.map((domain,key)=>{
                         return(
-                        <Grid key={key} item sm={4}>
-                        <Card >
-                        <CardContent style={{backgroundColor:'#bffffd'}}>
-                            <Grid container >
+                        <Grid key={key} item sm={3} style={{width:"100%"}}>
+                            <Box className='cardbox'>
+                        <Card className="domain-card" >
+                        <CardContent>
+                            <Container>
+                            <Grid container>
                                 <Grid item xs={12} justifyContent='center' display='flex'>
-                                    <img className="domain-logo" src={domain.logo}></img>
+                                    <img className="domain-logo" src={process.env.PUBLIC_URL+domain.logo} ></img>
                                 </Grid>
+                                
                                 <Grid item xs={12} justifyContent='center' display='flex'>
-                                    <Typography variant="h5">{domain.title}</Typography>
+                                    <Typography textAlign={'center'} variant="body1">{domain.title}</Typography>
                                 </Grid>
                             </Grid>
+                            </Container>
 
                         </CardContent>
                         </Card>
+                        </Box>
                         </Grid>)
                     })}
                 </Grid>
-        </Container>
+                </Container>
         </section>
+        </Container>
     )
 }

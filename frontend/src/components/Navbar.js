@@ -57,7 +57,7 @@ export default function Navbar({textcolor}){
       >
         <MenuIcon />
       </IconButton>
-      <Typography
+      <Typography className='nav-text'
         variant="h6"
         component="div"
         sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
@@ -66,7 +66,7 @@ export default function Navbar({textcolor}){
       </Typography>
       <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
         {navItems.map((item) => (
-          <Button key={item} sx={{ color: textcolor }}>
+          <Button className='nav-text' key={item} sx={{ color: textcolor }}>
             {item}
           </Button>
         ))}

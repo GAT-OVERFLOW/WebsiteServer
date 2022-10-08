@@ -1,4 +1,41 @@
+.nav-text{
+    text-shadow: 0.1rem 0.1rem 0.2rem black;
+}
+
+/* BANNER SECTION */
+
+.banner-section{
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-position:center;
+    height: 80vh;
+}
+
+/* DOMAIN SECTION */
 .domain-logo{
     height: 5rem;
     width: 5rem;
+    background: transparent !important;
+}
+
+.domain-section{
+    background: linear-gradient(0deg,rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("https://thumbs.dreamstime.com/b/internet-technology-programming-seamless-background-linear-icons-set-html-php-code-pattern-line-style-74589214.jpg") repeat fixed;
+    object-fit: contain;
+}
+
+.domain-card{
+    height: 100%;
+}
+
+.cardbox{
+    box-shadow: 0 0 0.5rem 0.2rem white,
+                0 0 1rem 0.5rem cyan;
+}
+
+.domain-card .MuiCardContent-root{
+    background-color:#26242e;
+    color: white;
+    height: 100%;
+    
 }

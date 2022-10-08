@@ -1,4 +1,4 @@
-import { Card, Grid, Typography } from "@mui/material";
+import { Container, Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import ListItem from '@mui/material/ListItem';
@@ -22,8 +22,9 @@ export default function About({events}){
       }
     return(
     <Box>
-        <Grid container p={10} alignItems='center' justifyContent={'center'} spacing={10}>
+        <Grid container py={10} alignItems='center' justifyContent={'center'} spacing={10}>
             <Grid item md={8}>
+                <Container maxWidth='md'>
                 <Typography variant="h3" mb={5}>
                     About us
                 </Typography>
@@ -33,6 +34,7 @@ export default function About({events}){
                         n incididunt do do nostrud sunt eu veniam sunt. Dolore amet adipisicing labore deserunt nisi ipsum tempor amet laboris duis incididunt incididunt occaecat. Dolor aliqua proident esse sint tempor. Nulla mollit officia non aliqua quis. Reprehenderit minim exercitation consectetur nulla minim ea voluptate. Sint amet culpa eiusmod sit proident. Ad et amet incididunt aute minim exercitation esse fugiat ipsum ut magna.
                         Esse sint incididunt pariatur commodo culpa fugiat occaecat consequat. Consectetur ad fugiat excepteur occaecat ipsum ullamco exercitation ut enim incididunt minim. Velit velit et mollit irure. Ipsum eu cillum reprehenderit in magna cupidatat commodo pariatur adipisicing ut eiusmod aliquip occaecat nostrud. Velit dolor excepteur nisi adipisicing voluptate consectetur anim esse non proident aute nulla. Enim et voluptate anim in ex amet. Ut consequat consequat aliquip pariatur.
                 </Typography>
+                </Container>
             </Grid>
             <Grid item md={4}>
                 <Box>

@@ -1,5 +1,7 @@
 import { Card, CardContent, Grid, Typography } from "@mui/material"
 import { Box, Container } from "@mui/system"
+import { useNavigate } from 'react-router-dom';
+
 const domains = [
         {title:"Web development",logo:"https://spng.pngfind.com/pngs/s/223-2239115_instagram-social-icon-black-red-instagram-icons-png.png"},
         {title:"Artificial intelligence",logo:"https://spng.pngfind.com/pngs/s/223-2239115_instagram-social-icon-black-red-instagram-icons-png.png"},
@@ -10,6 +12,9 @@ const domains = [
         {title:"Cyber security",logo:"https://spng.pngfind.com/pngs/s/223-2239115_instagram-social-icon-black-red-instagram-icons-png.png"},
         ]
 export default function Domains(){
+
+    const navigate= useNavigate();
+
     return(
         <Container maxWidth='xl'>
         <section id="domain-section">
@@ -20,7 +25,8 @@ export default function Domains(){
                         return(
                         <Grid key={key} item sm={4} style={{width:"100%"}}>
                             <Box className='cardbox'>
-                        <Card className="domain-card" >
+                        
+                        <Card className="domain-card" onClick={()=>{navigate('/domain/'+key);window.scroll({top:0, behavior: "smooth"})}}>
                         <CardContent>
                             <Container>
                             <Grid container>

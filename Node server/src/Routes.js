@@ -16,9 +16,9 @@ app.get("/profiles", async(request, response) => {
     }
 })
 
-app.get("/profiles/user",  async(request, response) => {
+app.get("/profiles",  async(request, response) => {
     console.log(request.query.name)
-    const users = await profileModel.find({"name":request.query.name});
+    const users = await profileModel.find({"name":{$regex:request.query.name}});
 
     try{
         response.status(200).send(users);
@@ -28,7 +28,7 @@ app.get("/profiles/user",  async(request, response) => {
     }
 })
 
-app.get("/profiles/id",  async(request, response) => {
+app.get("/profile",  async(request, response) => {
     console.log(request.query.id)
     const users = await profileModel.find({"_id":request.query.id});
 
@@ -53,7 +53,7 @@ app.get("/projects", async(request, response) => {
     }
 })
 
-app.get("/projects/id",  async(request, response) => {
+app.get("/projects",  async(request, response) => {
     console.log(request.query.id)
     const projects = await projectsModel.find({"_id":request.query.id});
 

@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import React from 'react';
 import Domain from './pages/Domain';
+import Profile from './pages/Profile'
 import {Routes,Route} from 'react-router-dom';
 
 function App() {
@@ -12,9 +13,9 @@ function App() {
     <React.Fragment>
     <Navbar/>
     <Routes>
-      <Route path="/" element={<Homepage />}>
-      </Route>
+      <Route path="/" element={<Homepage />}/>
       <Route path="/domain/:id" element={<Domain />} />
+      <Route path="/profile/:id" element={<Profile />} />
     </Routes>
     <Footer/>
 

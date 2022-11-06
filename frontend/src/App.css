@@ -1,107 +1,108 @@
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888; 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }
+}
 
-.nav-text{
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.nav-text {
     text-shadow: 0.1rem 0.1rem 0.2rem black;
     color: white !important;
     text-decoration: none !important;
 }
 
-a{
+a {
     text-decoration: none !important;
 }
 
 /* BANNER SECTION */
-.banner-text{
+.banner-text {
     text-shadow: 0.1rem 0.1rem 0.2rem black;
     color: white !important;
 }
 
-.banner-section{
+.banner-section {
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: contain;
-    background-position:center;
+    background-position: center;
     height: 80vh;
 }
 
 /* DOMAIN SECTION */
-.domain-logo{
+.domain-logo {
     height: 5rem;
     width: 5rem;
     background: transparent !important;
 }
 
-#domain-section{
-    background: linear-gradient(0deg,rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("https://thumbs.dreamstime.com/b/internet-technology-programming-seamless-background-linear-icons-set-html-php-code-pattern-line-style-74589214.jpg") repeat fixed;
+#domain-section {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://thumbs.dreamstime.com/b/internet-technology-programming-seamless-background-linear-icons-set-html-php-code-pattern-line-style-74589214.jpg") repeat fixed;
     object-fit: contain;
 }
 
-.domain-card{
+.domain-card {
     height: 100%;
 }
 
-.cardbox{
+.cardbox {
     height: 100%;
     box-shadow: 0 0 0.5rem 0.2rem white,
-                0 0 1rem 0.5rem cyan;
+        0 0 1rem 0.5rem cyan;
 }
 
-.domain-card .MuiCardContent-root{
-    background-color:#26242e;
+.domain-card .MuiCardContent-root {
+    background-color: #26242e;
     color: white;
     height: 100%;
-    
+
 }
 
 
 
 /* FOOTER SECTION */
-footer{
-     background-color: #26242e;
+footer {
+    background-color: #26242e;
 }
-footer a{
+
+footer a {
     text-decoration: none;
     color: white;
-    
+
 }
 
 
 /* DOMAIN PAGE */
-.about-image{
+.about-image {
     object-fit: contain;
     width: 100%;
 }
 
-.about-domain-section{
+.about-domain-section {
     background-color: rgb(189, 218, 241);
 }
 
-.team-section{
+.team-section {
     background: url("https://i.pinimg.com/originals/60/2e/0c/602e0c3cd7ab07d8dfc10ca287323b1e.jpg") no-repeat fixed;
     background-size: cover;
 
-    
+
 }
 
-.team-dp{
+.team-dp {
     object-fit: contain;
     width: 100%;
     max-height: 20rem;
@@ -109,3 +110,10 @@ footer a{
 
 }
 
+.about-projects-section {
+    background-color: antiquewhite;
+}
+
+.events-details{
+    background-color: rgba(55, 62, 152, 1);
+}

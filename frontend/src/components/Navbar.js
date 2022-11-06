@@ -75,7 +75,7 @@ export default function Navbar(){
     const container = window !== undefined ? () => window.document.body : undefined;
     return(   
     <Box sx={{ display: 'flex' }}>   
-    <AppBar  style={{ background: 'transparent', boxShadow: 'none'}} component="nav">
+    <AppBar  style={{backgroundColor: "#4158D0", backgroundImage: "linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)", boxShadow: 'none'}} component="nav">
     <Toolbar >
       <IconButton
         color="inherit"

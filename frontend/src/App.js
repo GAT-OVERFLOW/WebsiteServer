@@ -7,6 +7,8 @@ import React from 'react';
 import Domain from './pages/Domain';
 import Profile from './pages/Profile'
 import {Routes,Route} from 'react-router-dom';
+import Projects from './pages/Projects';
+import Events from './pages/Events';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <Route path="/" element={<Homepage />}/>
       <Route path="/domain/:id" element={<Domain />} />
       <Route path="/profile/:id" element={<Profile />} />
+      <Route path="/projects/:id" element={<Projects />}/>
+      <Route path='/events/:id' element={<Events/>}/>
     </Routes>
     <Footer/>
 

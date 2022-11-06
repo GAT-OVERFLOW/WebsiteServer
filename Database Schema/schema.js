@@ -14,10 +14,10 @@ const profileSchema = mongoose.Schema({
         validate : [emailValid, 'Fill a valid email address!']
     },
     name : String,  
-    contribs : {
+    contribs : [{
         type: [mongoose.SchemaTypes.ObjectId],
         ref: "Projects"
-    },
+    }],
     role: String,
     department : String,
     ghProfile : {
@@ -52,6 +52,9 @@ const projectSchema = mongoose.Schema({
     status: {
         type: String,
         enum: ["Started","In progress","Completed"]
+    },
+    techUsed:{
+        type: String
     }
 });
 
@@ -63,7 +66,11 @@ const eventSchema =  mongoose.Schema({
         validate : [urlValid, 'Enter a proper URL']
     },                                                                          
     description : String,
-    date : Date
+    venue: String,
+    teamStrength: String,
+    image: String,
+    pdf: String,
+    date : String
 });
 
 

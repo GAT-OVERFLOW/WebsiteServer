@@ -4,7 +4,8 @@ import { Box } from "@mui/system";
 export default function Footer(){
     return(
         <footer id="footer">
-            <Box  py={10}>
+            <Box  py={10} style = {{backgroundColor: "#4158D0", backgroundImage: "linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)"}}
+>
                 <Container maxWidth={'xl'} className='nav-text'>
                 <Grid container spacing={10} justifyContent={'space-around'}>
                     <Grid item sm={3} >

@@ -14,6 +14,8 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
 
 
 
@@ -21,6 +23,7 @@ import { Link } from 'react-router-dom';
 export default function Navbar(){
     const [mobileOpen, setMobileOpen] = useState(false);
     const drawerWidth = 240;
+    const navigate = useNavigate();
     const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
     };
@@ -101,8 +104,8 @@ export default function Navbar(){
             Domains
           </Button>
 
-          <Button className='nav-text'  >
-            Members
+          <Button className='nav-text' onClick={()=>{navigate('/team');}}>
+            Team
           </Button>
 
           <Button className='nav-text'  >

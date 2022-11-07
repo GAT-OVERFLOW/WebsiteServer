@@ -2,15 +2,15 @@ import { Card, CardContent, Grid, Typography, Avatar } from "@mui/material";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 
-export default function Team({ members }) {
+export default function Team({ members,title='Team' }) {
     console.log(members)
     return (<section className="team-section">
         <Grid>
             <Grid item sm={4}>
-                <Typography variant="h1" style={{ fontSize: "60px" }} paddingY={"50px"} textAlign={'center'}>Team</Typography>
+                <Typography variant="h3" paddingY={"50px"} textAlign={'center'}>{title}</Typography>
             </Grid>
             <Grid item sm={4}>
-                <Grid container justifyContent={'center'} paddingX={"1px"} spacing={10} paddingBottom={"50px"} >
+                <Grid container justifyContent={'center'} paddingX={"2rem"} spacing={10} paddingBottom={"50px"} >
                     {members.map((member) => {
                         return (
                             <Grid item sm={3}>

@@ -9,6 +9,7 @@ import Profile from './pages/Profile'
 import {Routes,Route} from 'react-router-dom';
 import Projects from './pages/Projects';
 import Events from './pages/Events';
+import Team from './pages/Team';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route path="/domain/:id" element={<Domain />} />
       <Route path="/profile/:id" element={<Profile />} />
       <Route path="/projects/:id" element={<Projects />}/>
+      <Route path='/team' element={<Team/>}/>
       <Route path='/events/:id' element={<Events/>}/>
     </Routes>
     <Footer/>

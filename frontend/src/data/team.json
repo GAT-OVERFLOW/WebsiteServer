@@ -1,0 +1,18 @@
+[
+{
+    "name":"web development",
+    "coordinators":[
+        {"name":"Likith R","email":"likithr@gmail.com","github":"https://www.github.com","dp":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg/1200px-Elon_Musk_Royal_Society_%28crop2%29.jpg"},
+        {"name":"Shanthanu N","email":"likithr@gmail.com","github":"https://www.github.com","dp":"https://imageio.forbes.com/specials-images/imageserve/5bb22ae84bbe6f67d2e82e05/0x0.jpg?format=jpg&crop=1012,1013,x627,y129,safe&height=416&width=416&fit=bounds"},
+        {"name":"Sharan R","email":"likithr@gmail.com","github":"https://www.github.com","dp":"https://upload.wikimedia.org/wikipedia/commons/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg"}
+        ],
+        "subcore":[
+        {"name":"Inesh Tandon","email":"likithr@gmail.com","github":"https://www.github.com","dp":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg/1200px-Elon_Musk_Royal_Society_%28crop2%29.jpg"},
+        {"name":"Yadhu Nandan","email":"likithr@gmail.com","github":"https://www.github.com","dp":"https://imageio.forbes.com/specials-images/imageserve/5bb22ae84bbe6f67d2e82e05/0x0.jpg?format=jpg&crop=1012,1013,x627,y129,safe&height=416&width=416&fit=bounds"},
+        {"name":"Akash Kiran","email":"likithr@gmail.com","github":"https://www.github.com","dp":"https://upload.wikimedia.org/wikipedia/commons/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg"},
+        {"name":"Chethan S R","email":"likithr@gmail.com","github":"https://www.github.com","dp":"https://upload.wikimedia.org/wikipedia/commons/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg"},
+        {"name":"Bhuvana K S","email":"likithr@gmail.com","github":"https://www.github.com","dp":"https://upload.wikimedia.org/wikipedia/commons/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg"},
+        {"name":"Vaishnavi","email":"likithr@gmail.com","github":"https://www.github.com","dp":"https://upload.wikimedia.org/wikipedia/commons/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg"}
+    ]
+}
+]
